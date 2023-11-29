@@ -47,3 +47,44 @@ jobs:
           path: |
             ./bin/
             ./obj/
+  test:
+    name: Test
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Run tests
+        run: make test
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          name: test-artifacts
+          path: |
+            ./bin/
+            ./obj/
+  
+  check-format:
+    name: Check Format
+    needs: test
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Check code format
+        run: make check-format
+
+  milestone1:
+    name: Milestone 1
+    needs: check-format
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Run Milestone 1 tests
+        run: ./Projet_test.sh
