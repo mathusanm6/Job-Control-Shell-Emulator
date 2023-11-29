@@ -1,0 +1,25 @@
+name: C-JobControl-Shell CI
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: configure
+      run: ./configure
+    - name: make
+      run: make
+    - name: test
+      run: make test
+    - name: check format
+      run: make check-format
+    - name: milestone 1
+      run: ./Projet_test.sh
