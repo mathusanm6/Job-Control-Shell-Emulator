@@ -7,35 +7,22 @@ on:
     branches: [ "master" ]
 
 jobs:
-  setup:
-    name: Setup
-    runs-on: ubuntu-latest
 
-    steps:
-    - uses: actions/checkout@v3
-
-    - name: Update packages
-      run: sudo apt-get update
-      
-    - name: Install dependencies
-      run: |
-          sudo apt-get install -y git gcc make valgrind clang-format libreadline-dev
-          git --version
-          gcc --version
-          make --version
-          valgrind --version
-          clang-format --version
-        
-    - name: Setup
-      run: echo "Setup completed"
-  
   build:
     name: Build
-    needs: setup
     runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v3
+
+      - name: Update packages
+        run: sudo apt-get update
+      
+      - name: Install dependencies
+        run: |
+            sudo apt-get install -y gcc make
+            gcc --version
+            make --version
 
       - name: Build project
         run: make
@@ -54,6 +41,16 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
+
+      - name: Update packages
+        run: sudo apt-get update
+      
+      - name: Install dependencies
+        run: |
+            sudo apt-get install -y gcc make valgrind
+            gcc --version
+            make --version
+            valgrind --version
 
       - name: Run tests
         run: make test
@@ -75,6 +72,15 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
+      - name: Update packages
+        run: sudo apt-get update
+      
+      - name: Install dependencies
+        run: |
+            sudo apt-get install -y make clang-format
+            make --version
+            clang-format --version
+          
       - name: Check code format
         run: make check-format
 
@@ -85,6 +91,17 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
+
+      - name: Update packages
+        run: sudo apt-get update
+        
+      - name: Install dependencies
+        run: |
+            sudo apt-get install -y git gcc make valgrind libreadline-dev
+            git --version
+            gcc --version
+            make --version
+            valgrind --version
 
       - name: Run Milestone 1 tests
         run: ./Projet_test.sh
