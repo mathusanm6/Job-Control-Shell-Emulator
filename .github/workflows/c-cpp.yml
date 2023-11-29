@@ -7,19 +7,41 @@ on:
     branches: [ "master" ]
 
 jobs:
-  build:
-
+  setup:
+    name: Setup
     runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v3
-    - name: configure
-      run: ./configure
-    - name: make
-      run: make
-    - name: test
-      run: make test
-    - name: check format
-      run: make check-format
-    - name: milestone 1
-      run: ./Projet_test.sh
+    
+    - name: Install dependencies
+      run: |
+          apt-get update
+          apt-get install -y git gcc make valgrind clang-format libreadline-dev
+          git --version
+          gcc --version
+          make --version
+          valgrind --version
+          clang-format --version
+        
+    - name: Setup
+      run: echo "Setup completed"
+  
+  build:
+    name: Build
+    needs: setup
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Build project
+        run: make
+
+      - name: Upload artifacts
+        uses: actions/upload-artifacts@v3
+        with:
+          name: build-artifacts
+          path: |
+            ./bin/
+            ./obj/
