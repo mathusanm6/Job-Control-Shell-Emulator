@@ -1,5 +1,5 @@
 # Job Control Shell Emulator in C
-[![pipeline status](https://github.com/mathusanMe/C-JobControl-Shell/actions/workflows/c-cpp.yml/badge.svg)](https://github.com/mathusanMe/C-JobControl-Shell/actions/workflows/c-cpp.yml)
+[![Job-Control-Shell-Emulator](https://github.com/mathusanMe/Job-Control-Shell-Emulator/actions/workflows/c-cpp.yml/badge.svg)](https://github.com/mathusanMe/Job-Control-Shell-Emulator/actions/workflows/c-cpp.yml)
 
 As part of our Operating Systems course, our team is ambitiously crafting an advanced shell emulator. This project, a work-in-progress as of December 2023, focuses on sophisticated job control and system call integration, specifically tailored for Linux environments.
 
