@@ -19,7 +19,7 @@ Our shell emulator, developed in C, is a compact yet powerful tool, designed wit
 - Navigation (`cd`)
 - Display current directory (`pwd`)
 - Exit functionality (`exit`)
-- Help command (`?`)
+- Last command exit value (`?`)
 - Execution of external commands
 
 ### Advanced Features
