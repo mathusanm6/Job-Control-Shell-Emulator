@@ -1,4 +1,4 @@
-name: C-JobControl-Shell CI
+name: Job-Control-Shell-Emulator
 
 on:
   push:
