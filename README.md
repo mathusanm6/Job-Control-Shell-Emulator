@@ -1,2 +1,2 @@
 # Jsh Shell for Job Control
-[![pipeline status](https://gaufre.informatique.univ-paris-diderot.fr/selvakum/2023-sy5-dgs/badges/master/pipeline.svg)](https://gaufre.informatique.univ-paris-diderot.fr/selvakum/2023-sy5-dgs/commits/master)
+[![Job-Control-Shell-Emulator](https://github.com/mathusanMe/Job-Control-Shell-Emulator/actions/workflows/main.yml/badge.svg)](https://github.com/mathusanMe/Job-Control-Shell-Emulator/actions/workflows/main.yml)
