@@ -33,7 +33,7 @@ Our shell emulator, developed in C, is a compact yet powerful tool, designed wit
 ## 2. Visual Previews
 
 <p align="center">
-  <img src="images/SCR-20231203-0.png" alt="Job Control Shell">
+  <img src="images/jobs.jpeg" alt="Job Control Shell">
   <br>
   <sub>Job Control Shell</sub>
 </p>
@@ -41,7 +41,7 @@ Our shell emulator, developed in C, is a compact yet powerful tool, designed wit
 <br>
 
 <p align="center">
-  <img src="images/SCR-20231203-1.png" alt="Basic Prompt View">
+  <img src="images/basic-prompt-view.jpeg" alt="Basic Prompt View">
   <br>
   <sub>Basic Prompt View</sub>
 </p>
@@ -49,7 +49,7 @@ Our shell emulator, developed in C, is a compact yet powerful tool, designed wit
 <br>
 
 <p align="center">
-  <img src="images/SCR-20231203-2.png" alt="Listing Files">
+  <img src="images/listing-files.jpeg" alt="Listing Files">
   <br>
   <sub>Listing Files</sub>
 </p>
@@ -57,17 +57,25 @@ Our shell emulator, developed in C, is a compact yet powerful tool, designed wit
 <br>
 
 <p align="center">
-  <img src="images/SCR-20231203-3.png" alt="Ever Updating Prompt">
+  <img src="images/date.jpeg" alt="Executing an External Command: Date">
   <br>
-  <sub>Ever Updating Prompt</sub>
+  <sub>Executing an External Command: Date</sub>
 </p>
 
 <br>
 
 <p align="center">
-  <img src="images/SCR-20231203-4.png" alt="Executing an External Command: Date">
+  <img src="images/redirections.jpeg" alt="I/O Redirections">
   <br>
-  <sub>Executing an External Command: Date</sub>
+  <sub>I/O Redirections</sub>
+</p>
+
+<br>
+
+<p align="center">
+  <img src="images/jobs.jpeg" alt="Jobs">
+  <br>
+  <sub>Jobs</sub>
 </p>
 
 ## 3. Installation
