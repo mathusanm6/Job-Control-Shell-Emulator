@@ -7,11 +7,13 @@ Our team, consisting of **three dedicated members**, is utilizing the C programm
 
 ## Table of Contents
 1. [Overview](#overview)
-2. [Visual Previews](#visual-previews)
-3. [Getting Started](#getting-started)
-4. [Usage Instructions](#usage-instructions)
-5. [Testing](#testing)
-6. [Debugging](#debugging)
+2. [Authors](AUTHORS.md)
+3. [Project Architecture](ARCHITECTURE.md)
+4. [Visual Previews](#visual-previews)
+5. [Getting Started](#getting-started)
+6. [Usage Instructions](#usage-instructions)
+7. [Testing](#testing)
+8. [Debugging](#debugging)
 
 ## Overview
 
