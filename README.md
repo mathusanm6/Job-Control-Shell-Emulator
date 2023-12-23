@@ -1,35 +1,45 @@
 # Jsh Shell for Job Control
 [![Job-Control-Shell-Emulator](https://github.com/mathusanMe/Job-Control-Shell-Emulator/actions/workflows/main.yml/badge.svg)](https://github.com/mathusanMe/Job-Control-Shell-Emulator/actions/workflows/main.yml)
 
-As part of our Operating Systems course, our team is ambitiously crafting an advanced shell emulator. This project, a work-in-progress as of December 2023, focuses on sophisticated job control and system call integration, specifically tailored for Linux environments.
+As part of our **Operating Systems course**, our team is ambitiously crafting an advanced shell emulator. This project, a **work-in-progress as of December 2023**, focuses on sophisticated job control and system call integration, specifically tailored for Linux environments.
 
-Our team, consisting of three dedicated members, is utilizing the C programming language for development. We leverage the robustness of the [GNU Compiler Collection (GCC)](https://gcc.gnu.org/) and the efficiency of the [GNU Make](https://www.gnu.org/software/make/) build automation tool. To ensure the reliability and stability of our shell emulator, we are also employing the [Valgrind](https://valgrind.org/) tool for meticulous memory debugging. An integral part of our development process is the continuous integration (CI) pipeline, hosted and managed via GitHub Actions.
+Our team, consisting of **three dedicated members**, is utilizing the C programming language for development. We leverage the robustness of the [GNU Compiler Collection (GCC)](https://gcc.gnu.org/) and the efficiency of the [GNU Make](https://www.gnu.org/software/make/) build automation tool. To ensure the reliability and stability of our shell emulator, we are also employing the [Valgrind](https://valgrind.org/) and [GNU Debugger](https://www.gnu.org/software/gdb/) tool for meticulous memory debugging. An integral part of our development process is the continuous integration (CI) pipeline, hosted and managed via GitHub Actions.
 
 ## Table of Contents
-1. [Description](#description)
+1. [Overview](#overview)
 2. [Visual Previews](#visual-previews)
 3. [Getting Started](#getting-started)
 4. [Usage Instructions](#usage-instructions)
 5. [Testing](#testing)
 6. [Debugging](#debugging)
 
-## Description
-Our shell emulator, developed in C, is a compact yet powerful tool, designed with an emphasis on advanced job control and seamless system call integration. Optimized for Linux systems, it supports an array of features and commands:
+## Overview
 
-### Supported Commands
-- Navigation (`cd`)
-- Display current directory (`pwd`)
-- Exit functionality (`exit`)
-- Last command exit value (`?`)
-- Execution of external commands
+This project presents a sophisticated shell emulator, meticulously crafted in C for Linux systems. It's tailored for academic purposes, showcasing robust features like advanced job control and seamless system call integration.
 
-### Advanced Features
-- Command history logging
-- Comprehensive job control
-- Input/Output redirection
-- Piping capabilities
-- Management of background processes
-- Efficient signal handling
+### Key Commands and Functionalities
+
+#### Essential Commands
+- **Navigation**: Change directories using `cd`.
+- **Directory Display**: Show current directory with `pwd`.
+- **Exiting the Shell**: Use `exit` to terminate the shell session.
+- **Status of Last Command**: Query using `?`.
+- **External Command Execution**: Seamlessly run external commands.
+- **I/O Redirections**: Comprehensive redirection capabilities including `<`, `>`, `>>`, `>|`, `2>`, `2>>`, `2>|`.
+- **Job Management**: List jobs with `jobs`, support for background execution using `&`, and job termination with `kill`.
+
+#### Advanced Features
+- **Command History**: Efficient logging of command history for easy recall.
+- **Job Control**: Detailed management of foreground and background processes.
+- **Input/Output Redirection**: Redirect standard input/output with ease.
+- **Piping**: Facilitates the chaining of commands through piping.
+- **Signal Handling**: Robust management of system signals for process control.
+
+### Roadmap: Upcoming Enhancements
+- **Enhanced Job Control Options**: Introducing additional controls for job management.
+- **Extended Command Set**: Inclusion of commands like `fg` (foreground) and `bg` (background).
+- **Advanced Piping Support**: Further development of piping functionalities.
+- **Redirection Expansion**: Broader options for input/output redirections, especially in conjunction with piping.
 
 ## Visual Previews
 
