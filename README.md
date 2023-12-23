@@ -83,12 +83,14 @@ Our shell emulator, developed in C, is a compact yet powerful tool, designed wit
 
 ### System Requirements
 - **Operating System**: Linux-based or use Docker (Dockerfile provided).
-- **Required Tools**: 
+- **Required Tools & Packages**: 
   - [GNU Compiler Collection (GCC)](https://gcc.gnu.org/) 
   - [GNU Make](https://www.gnu.org/software/make/)
   - [GNU Debugger (GDB)](https://www.gnu.org/software/gdb/)
   - [Valgrind](https://valgrind.org/)
   - [Git](https://git-scm.com/)
+  - [Clang-Format](https://clang.llvm.org/docs/ClangFormat.html)
+  - [libreadline-dev](https://packages.debian.org/sid/libreadline-dev)
 
 ### Installation Guide
 1. **Clone the Repository**: First, clone the repository to your local machine.
