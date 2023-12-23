@@ -33,7 +33,7 @@ Our shell emulator, developed in C, is a compact yet powerful tool, designed wit
 ## 2. Visual Previews
 
 <p align="center">
-  <img src="images/jobs.jpeg" alt="Job Control Shell">
+  <img src="images/job-control-shell.png" alt="Job Control Shell">
   <br>
   <sub>Job Control Shell</sub>
 </p>
