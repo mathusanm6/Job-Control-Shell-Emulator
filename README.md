@@ -8,11 +8,12 @@ Our team, consisting of three dedicated members, is utilizing the C programming 
 ## Table of Contents
 1. [Description](#description)
 2. [Visual Previews](#visual-previews)
-3. [Installation](#installation)
-4. [Usage](#usage)
+3. [Getting Started](#getting-started)
+4. [Usage Instructions](#usage-instructions)
 5. [Testing](#testing)
+6. [Debugging](#debugging)
 
-## 1. Description
+## Description
 Our shell emulator, developed in C, is a compact yet powerful tool, designed with an emphasis on advanced job control and seamless system call integration. Optimized for Linux systems, it supports an array of features and commands:
 
 ### Supported Commands
@@ -30,7 +31,7 @@ Our shell emulator, developed in C, is a compact yet powerful tool, designed wit
 - Management of background processes
 - Efficient signal handling
 
-## 2. Visual Previews
+## Visual Previews
 
 <p align="center">
   <img src="images/job-control-shell.png" alt="Job Control Shell">
@@ -78,27 +79,44 @@ Our shell emulator, developed in C, is a compact yet powerful tool, designed wit
   <sub>Jobs</sub>
 </p>
 
-## 3. Installation
-To install our shell emulator, follow these simple steps:
-1. Clone the repository.
-2. In the terminal, execute:
-```bash
-make
-```
+## Getting Started
 
-## 4. Usage
-To run this shell, simply run the following command:
-```bash
-make run
-```
+### System Requirements
+- **Operating System**: Linux-based or use Docker (Dockerfile provided).
+- **Required Tools**: 
+  - [GNU Compiler Collection (GCC)](https://gcc.gnu.org/) 
+  - [GNU Make](https://www.gnu.org/software/make/)
+  - [GNU Debugger (GDB)](https://www.gnu.org/software/gdb/)
+  - [Valgrind](https://valgrind.org/)
+  - [Git](https://git-scm.com/)
 
-To clean the project, simply run the following command:
-```bash
-make clean
-```
+### Installation Guide
+1. **Clone the Repository**: First, clone the repository to your local machine.
+2. **Compilation**: Open your terminal and navigate to the cloned repository's directory. Compile the project by executing:
+   ```bash
+   make all
+   ```
 
-## 5. Testing
-To run the test suite, simply run the following command:
-```bash
-make test
-```
+## Usage Instructions
+- **Running the Shell Emulator**: To start the shell, enter the following command in your terminal:
+  ```bash
+  make run
+  ```
+- **Cleaning the Project**: To remove all compiled files, use:
+  ```bash
+  make clean
+  ```
+
+## Testing
+- **Running Tests**: For testing, execute:
+  ```bash
+  make test
+  ```
+
+This will run the provided test suite to ensure everything is functioning correctly.
+
+## Debugging
+- **GNU Debugger**: To debug the shell emulator using GDB, execute:
+  ```bash
+  make gdb
+  ```
