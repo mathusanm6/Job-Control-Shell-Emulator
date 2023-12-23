@@ -1,4 +1,4 @@
-# Jsh Shell for Job Control
+# Job Control Shell Emulator
 [![Job-Control-Shell-Emulator](https://github.com/mathusanMe/Job-Control-Shell-Emulator/actions/workflows/main.yml/badge.svg)](https://github.com/mathusanMe/Job-Control-Shell-Emulator/actions/workflows/main.yml)
 
 As part of our **Operating Systems course**, our team is ambitiously crafting an advanced shell emulator. This project, a **work-in-progress as of December 2023**, focuses on sophisticated job control and system call integration, specifically tailored for Linux environments.
