@@ -36,8 +36,6 @@ This project presents a sophisticated shell emulator, meticulously crafted in C 
 - **Input/Output Redirection**: Redirect standard input/output with ease.
 - **Piping**: Facilitates the chaining of commands through piping.
 - **Signal Handling**: Robust management of system signals for process control.
-
-### Roadmap: Upcoming Enhancements
 - **Enhanced Job Control Options**: Introducing additional controls for job management.
 - **Extended Command Set**: Inclusion of commands like `fg` (foreground) and `bg` (background).
 - **Advanced Piping Support**: Further development of piping functionalities.
@@ -89,6 +87,14 @@ This project presents a sophisticated shell emulator, meticulously crafted in C 
   <img src="images/jobs.jpeg" alt="Jobs">
   <br>
   <sub>Jobs</sub>
+</p>
+
+<br>
+
+<p align="center">
+  <img src="images/complex-substitution.png" alt="Complex Substitution With Pipes">
+  <br>
+  <sub>Complex Substitution With Pipes</sub>
 </p>
 
 ## Getting Started
