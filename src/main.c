@@ -9,10 +9,12 @@
 #include "utils/constants.h"
 #include "utils/core.h"
 #include "utils/jobs_core.h"
+#include "utils/signal_management.h"
 
 int main() {
     init_core();
     init_const();
+    use_jsh_signal_management();
 
     rl_outstream = stderr;
     while (1) {
@@ -25,7 +27,6 @@ int main() {
         current_pipeline_list = parse_pipeline_list(last_line_read);
 
         if (current_pipeline_list == NULL) {
-            print_error("jsh: parse error");
             last_command_exit_value = COMMAND_FAILURE;
             continue;
         }
