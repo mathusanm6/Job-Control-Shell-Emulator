@@ -56,5 +56,8 @@ bin/
 jsh
 .sy5-2023-2024-projet-jsh-autotests.nosync
 
+# MacOS X
+.DS_Store
+
 #VSCode files
 .vscode/
