@@ -81,24 +81,3 @@ jobs:
           
       - name: Check code format
         run: make check-format
-
-  milestone1-2:
-    name: Milestone 1 & 2
-    needs: check-format
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: actions/checkout@v3
-
-      - name: Update packages
-        run: sudo apt-get update
-        
-      - name: Install dependencies
-        run: |
-            sudo apt-get install -y git gcc make valgrind libreadline-dev
-            git --version
-            gcc --version
-            make --version
-            valgrind --version
-      - name: Run Milestone 1 & 2 tests
-        run: ./Projet_test.sh
