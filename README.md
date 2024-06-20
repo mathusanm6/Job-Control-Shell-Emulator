@@ -1,7 +1,7 @@
 # Job Control Shell Emulator
 [![Job-Control-Shell-Emulator](https://github.com/mathusanMe/Job-Control-Shell-Emulator/actions/workflows/main.yml/badge.svg)](https://github.com/mathusanMe/Job-Control-Shell-Emulator/actions/workflows/main.yml)
 
-As part of our **Operating Systems course**, our team is ambitiously crafting an advanced shell emulator. This project, a **work-in-progress as of December 2023**, focuses on sophisticated job control and system call integration, specifically tailored for Linux environments.
+As part of our **Operating Systems course**, our team has ambitiously crafted an advanced shell emulator. This project focuses on sophisticated job control and system call integration, specifically tailored for Linux environments.
 
 Our team, consisting of **three dedicated members**, is utilizing the C programming language for development. We leverage the robustness of the [GNU Compiler Collection (GCC)](https://gcc.gnu.org/) and the efficiency of the [GNU Make](https://www.gnu.org/software/make/) build automation tool. To ensure the reliability and stability of our shell emulator, we are also employing the [Valgrind](https://valgrind.org/) and [GNU Debugger](https://www.gnu.org/software/gdb/) tool for meticulous memory debugging. An integral part of our development process is the continuous integration (CI) pipeline, hosted and managed via GitHub Actions.
 
